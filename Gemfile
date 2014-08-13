@@ -4,8 +4,14 @@ ruby '2.1.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.0'
 
-group :development do
+group :development, :test do
 	gem 'pg'
+	gem 'rspec-rails'
+end
+
+group :test do
+	gem 'selenium-webdriver'
+	gem 'capybara'
 end
 
 group :production do
